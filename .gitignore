@@ -1,4 +1,5 @@
 # reproducible setup
+_build/
 .dddlab/
 .env
 

@@ -1,4 +1,4 @@
-.PHONY: help build start stop test test-env
+.PHONY: help build start stop test test-env bb bd book-build book-deploy
 
 # Docker image name and tag
 IMAGE:=dddlab/computing
@@ -27,3 +27,16 @@ test: ## Make a test run against the latest image
 
 test-env: ## Make a test environment by installing test dependencies with pip
 	pip install -r tests/requirements.txt
+
+bb: ## shortcut for book-build
+	make book-build
+
+bd: ## shortcut for book-deploy
+	make book-deploy
+
+book-build: ## build jupyter-book
+	jupyter-book build .
+    
+book-deploy: ## deploy jupyter-book to github pages
+	ghp-import -n -p -f _build/html
+    
