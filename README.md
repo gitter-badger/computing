@@ -53,8 +53,8 @@ sudo apt-get update && \
 
 # re-login to to apply docker group setting
 
-git clone https://github.com/dddlab/project-template.git
-cd project-template/
+git clone https://github.com/dddlab/computing.git
+cd computing/
 chmod u+x setup.sh
 ./setup.sh 
 make build
@@ -69,7 +69,7 @@ make stop
 
 ## Running on Binder
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dddlab/project-template/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dddlab/computing/master)
 
 * File `binder/Dockerfile` defines a docker image for Binder sessions
-* Update base image to point to a [stable docker image](https://hub.docker.com/repository/docker/dddlab/project-template/tags?page=1)
+* Update base image to point to a [stable docker image](https://hub.docker.com/repository/docker/dddlab/computing/tags?page=1)

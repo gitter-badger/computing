@@ -1,7 +1,7 @@
 .PHONY: help build start stop test test-env
 
 # Docker image name and tag
-IMAGE:=dddlab/project-template
+IMAGE:=dddlab/computing
 TAG?=latest
 # Shell that make should use
 SHELL:=bash

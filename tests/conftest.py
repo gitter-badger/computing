@@ -30,7 +30,7 @@ def docker_client():
 @pytest.fixture(scope='session')
 def image_name():
     """Image name to test"""
-    return 'dddlab/project-template'
+    return 'dddlab/computing'
 
 
 class TrackedContainer(object):
