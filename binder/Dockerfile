@@ -1,4 +1,4 @@
-FROM dddlab/project-template:44bde5195fc8
+FROM dddlab/computing:latest
 
 # start binder compatibility
 # from https://mybinder.readthedocs.io/en/latest/tutorials/dockerfile.html
