@@ -1,4 +1,4 @@
-FROM dddlab/computing:latest
+FROM dddlab/computing:sha-3e0b4de
 
 # start binder compatibility
 # from https://mybinder.readthedocs.io/en/latest/tutorials/dockerfile.html
