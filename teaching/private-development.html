@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Private Development of Course Material &#8212; Computing Notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/mystnb.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Reproducibility" href="../research/reproducibility.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/dddlab.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Computing Notes</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  
+  <ul class="nav sidenav_l1">
+  <li class="">
+    <a href="../intro.html">Introduction</a>
+  </li>
+<li class="navbar-special">
+<p class="margin-caption">Research</p>
+</li>
+  <li class="">
+    <a href="../research/reproducibility.html">Reproducibility</a>
+  </li>
+<li class="navbar-special">
+<p class="margin-caption">Teaching</p>
+</li>
+  <li class="active">
+    <a href="">Private Development of Course Material</a>
+  </li>
+</ul>
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/teaching/private-development.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#initial-setup" class="nav-link">Initial Setup</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#two-remote-repositories-public-and-private" class="nav-link">Two Remote Repositories: Public and Private</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#local-repository-with-public-and-private-remotes" class="nav-link">Local Repository with Public and Private Remotes</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#publishing-content-to-public-repository" class="nav-link">Publishing content to public repository</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#using-different-remote-vs-local-branch-names-optional" class="nav-link">Using different remote vs. local branch names (Optional)</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#setting-default-push-behavior-optional" class="nav-link">Setting default push behavior (Optional)</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#duplicating-dual-remote-setup" class="nav-link">Duplicating Dual Remote Setup</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#adding-branches" class="nav-link">Adding Branches</a>
+        </li>
+    
+    </ul>
+</nav>
+
+
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="private-development-of-course-material">
+<h1>Private Development of Course Material<a class="headerlink" href="#private-development-of-course-material" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="initial-setup">
+<h2>Initial Setup<a class="headerlink" href="#initial-setup" title="Permalink to this headline">¶</a></h2>
+<p>For course material development, some content such as homework solutions need to be kept private (at least temporarily). This note explains how two repositories can be used in concert to simplify private development of public course content.</p>
+<p>The material on <a class="reference external" href="https://github.community/t5/How-to-use-Git-and-GitHub/Project-setup-question-with-public-and-private-quot-branches/m-p/26789/highlight/true#M7600">this posting</a> has been adapted for my purposes.</p>
+<div class="section" id="two-remote-repositories-public-and-private">
+<h3>Two Remote Repositories: Public and Private<a class="headerlink" href="#two-remote-repositories-public-and-private" title="Permalink to this headline">¶</a></h3>
+<p>Suppose you have two Github repositories:</p>
+<ul class="simple">
+<li><p>Public repo is at <code class="docutils literal notranslate"><span class="pre">https://github.com/username/public-repo.git</span></code></p></li>
+<li><p>Private repo is at <code class="docutils literal notranslate"><span class="pre">https://github.com/username/private-repo.git</span></code></p></li>
+</ul>
+<p>The public repo will be open to the students, whereas the private repo will be used for development and testing (shared with TAs etc.)</p>
+</div>
+<div class="section" id="local-repository-with-public-and-private-remotes">
+<h3>Local Repository with Public and Private Remotes<a class="headerlink" href="#local-repository-with-public-and-private-remotes" title="Permalink to this headline">¶</a></h3>
+<p>Create a local repository and set target repositories</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir ~/local-repo <span class="o">&amp;&amp;</span> <span class="nb">cd</span> ~/local-repo
+git init
+git remote add public https://github.com/username/public-repo.git
+git remote add private https://github.com/username/private-repo.git
+</pre></div>
+</div>
+<p>Add first public file in <code class="docutils literal notranslate"><span class="pre">master</span></code> branch and push to <code class="docutils literal notranslate"><span class="pre">public-repo</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># cd ~/local-repo &amp;&amp; git checkout master</span>
+
+<span class="nb">echo</span> <span class="s2">&quot;README&quot;</span> &gt;&gt; README.md
+git add README.md
+git commit -m<span class="s2">&quot;first commit&quot;</span>
+
+git push public master
+git push private master
+</pre></div>
+</div>
+<p>Now, <code class="docutils literal notranslate"><span class="pre">public-repo/master</span></code> and <code class="docutils literal notranslate"><span class="pre">private-repo/master</span></code> on Github are identical.</p>
+<p>Create a local development branch: <code class="docutils literal notranslate"><span class="pre">private-branch</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># cd ~/local-repo &amp;&amp; git checkout master</span>
+git checkout -b private-branch
+
+<span class="nb">echo</span> <span class="s2">&quot;handout&quot;</span> &gt; homework1-handout.md
+<span class="nb">echo</span> <span class="s2">&quot;solutions&quot;</span> &gt; homework1-solution.md
+git add homework1-handout.md homework1-solution.md 
+git commit -m<span class="s2">&quot;private development&quot;</span>
+
+git push -u private private-branch
+</pre></div>
+</div>
+<p>Here <code class="docutils literal notranslate"><span class="pre">private-branch</span></code> branch syncs with <code class="docutils literal notranslate"><span class="pre">private-repo/private-branch</span></code> (remote branch name defaults to <code class="docutils literal notranslate"><span class="pre">private-branch</span></code>)</p>
+</div>
+</div>
+<div class="section" id="publishing-content-to-public-repository">
+<h2>Publishing content to public repository<a class="headerlink" href="#publishing-content-to-public-repository" title="Permalink to this headline">¶</a></h2>
+<p><strong>Do not <code class="docutils literal notranslate"><span class="pre">merge</span></code> but <code class="docutils literal notranslate"><span class="pre">checkout</span></code></strong> relevant files into <code class="docutils literal notranslate"><span class="pre">public-repo/master</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># cd ~/public-repo &amp;&amp; git checkout master</span>
+
+git checkout private-branch homework1-handout.md
+git add homework1-handout.md
+git commit -m<span class="s2">&quot;release homework1&quot;</span>
+git push
+</pre></div>
+</div>
+<p>Note the line <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">private-branch</span> <span class="pre">homework1-handout.md</span></code> overwrites (or creates) <code class="docutils literal notranslate"><span class="pre">homework1-handout.md</span></code> in <code class="docutils literal notranslate"><span class="pre">public-repo/master</span></code>.</p>
+<div class="section" id="using-different-remote-vs-local-branch-names-optional">
+<h3>Using different remote vs. local branch names (Optional)<a class="headerlink" href="#using-different-remote-vs-local-branch-names-optional" title="Permalink to this headline">¶</a></h3>
+<p>A local branch (you would like to keep private) can have any name. For example, create a local branch named <code class="docutils literal notranslate"><span class="pre">new-branch</span></code> to sync with <code class="docutils literal notranslate"><span class="pre">private-repo/private-branch</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># cd ~/public-repo &amp;&amp; git checkout master</span>
+
+git checkout --orphan new-branch
+git pull private private-branch
+<span class="c1"># make some changes</span>
+git push private new-branch:private-branch
+</pre></div>
+</div>
+<p>Any changes in <code class="docutils literal notranslate"><span class="pre">new-branch</span></code> branch will now push to <code class="docutils literal notranslate"><span class="pre">private-repo/private-branch</span></code>.</p>
+<p><em>Note: upstream tracking doesn’t seem to stick with ‘-u’.</em></p>
+</div>
+<div class="section" id="setting-default-push-behavior-optional">
+<h3>Setting default <code class="docutils literal notranslate"><span class="pre">push</span></code> behavior (Optional)<a class="headerlink" href="#setting-default-push-behavior-optional" title="Permalink to this headline">¶</a></h3>
+<p>To me, the default behaviors of <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> and <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> are strange. I kept on using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">[remote]</span> <span class="pre">[branch]</span></code> above because even setting upstream with <code class="docutils literal notranslate"><span class="pre">-u</span></code> does not behave as I expect it to.</p>
+<p>However, configuring <a class="reference external" href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-pushdefault"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">push.default</span> <span class="pre">upstream</span></code></a> seems much more intuitive to me.</p>
+<p>Also, forcing checkout seems to simplify the process of cloning <code class="docutils literal notranslate"><span class="pre">private/feature</span></code> to a new local branch and sets the upstream:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git config push.default upstream --local
+git checkout -f -b new-branch private/feature
+<span class="nb">echo</span> <span class="s2">&quot;fix problems&quot;</span> &gt;&gt; homework1-handout.md
+git add -u
+git commit -m<span class="s2">&quot;fix homework1-handout&quot;</span>
+git push -v
+</pre></div>
+</div>
+<p>Above will push our local <code class="docutils literal notranslate"><span class="pre">new-branch</span></code> to <code class="docutils literal notranslate"><span class="pre">private/feature</span></code> branch.</p>
+</div>
+</div>
+<div class="section" id="duplicating-dual-remote-setup">
+<h2>Duplicating Dual Remote Setup<a class="headerlink" href="#duplicating-dual-remote-setup" title="Permalink to this headline">¶</a></h2>
+<p>Clone public repository and add private repository as remote:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/username/public-repo.git ~/public-repo
+<span class="nb">cd</span> ~/public-repo
+
+<span class="c1"># set local master branch to track public master branch</span>
+git remote rm origin <span class="c1"># to explicitly differentiate public vs private repos</span>
+git remote add public https://github.com/username/public-repo.git
+git push -u public master 
+</pre></div>
+</div>
+<p>Sync a local <code class="docutils literal notranslate"><span class="pre">private-branch</span></code> with <code class="docutils literal notranslate"><span class="pre">private-repo/private-branch</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># cd ~/public-repo &amp;&amp; git checkout master</span>
+
+git checkout --orphan private-branch 
+
+git remote add private https://github.com/username/private-repo.git
+git pull private private-branch
+
+<span class="nb">echo</span> <span class="s2">&quot;add solutions&quot;</span> &gt;&gt; homework1-solution.md
+git add -u
+git commit -m<span class="s2">&quot;modify homework 1 solution&quot;</span>
+
+git push -u private private-branch
+</pre></div>
+</div>
+<p>Check pushing is setup properly with a dry run: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">-n</span> <span class="pre">-v</span></code></p>
+</div>
+<div class="section" id="adding-branches">
+<h2>Adding Branches<a class="headerlink" href="#adding-branches" title="Permalink to this headline">¶</a></h2>
+<p>If multiple people are working on this repository, multiple branches need to be created.
+To create additional branches to the private repository, simply create a branch from <code class="docutils literal notranslate"><span class="pre">private-branch</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># cd ~/public-repo &amp;&amp; git checkout private-branch</span>
+
+git checkout -b new-private-branch
+<span class="nb">echo</span> <span class="s2">&quot;newfile&quot;</span> &gt; newfile.txt
+git add newfile.txt
+git commit -m<span class="s1">&#39;adding a new file&#39;</span>
+
+git remote add private new-private-branch
+git push --set-upstream private new-private-branch
+</pre></div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../research/reproducibility.html" title="previous page">Reproducibility</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Sang-Yun Oh<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    
+  </body>
+</html>
