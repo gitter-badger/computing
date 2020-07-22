@@ -1,5 +1,7 @@
 - file: intro
-- file: content
-  sections:
-    - file: markdown
-    - file: notebooks
+
+- header: Research
+- file: research/reproducibility
+
+- header: Teaching
+- file: teaching/private-development
