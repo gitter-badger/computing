@@ -69,7 +69,7 @@ make stop
 
 ## Running on Binder
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dddlab/computing/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dddlab/computing/master) [![Join the chat at https://gitter.im/syoh-computing/community](https://badges.gitter.im/syoh-computing/community.svg)](https://gitter.im/syoh-computing/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 * File `binder/Dockerfile` defines a docker image for Binder sessions
 * Update base image to point to a [stable docker image](https://hub.docker.com/repository/docker/dddlab/computing/tags?page=1)
